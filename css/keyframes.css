@@ -1,0 +1,24 @@
+@keyframes sky{
+	20%{
+		background-color: #a0d0d1}
+	50%{
+		background-color: #fff9a3;
+	}
+	75%{
+		background-color: #cb8389;
+	}
+	100%{
+		background-color: #57416d;
+	}
+	
+}
+@keyframes waves{
+	100%{
+		transform: translateX(200px);
+	}
+}
+@keyframes sunset{
+	100%{
+		transform: translateY(480px);
+	}
+}

@@ -1,0 +1,116 @@
+body{
+	background-color:#a0d0d1;
+	padding:0;
+	margin:0;
+	animation: sky 8s linear forwards;
+}
+.waves{
+	position: absolute;
+	left:0;
+	right:0;
+	bottom:30px;
+	height: 20px;
+	background-size: 40px 40px;
+	background-image:radial-gradient(
+		circle at 20px -5px,
+		transparent 22px,
+		#2d90af 18px);
+	background-repeat: repeat;
+	animation: waves 10s infinite forwards linear;
+
+}
+.waves:before{
+	position: absolute;
+	content: "";
+background-color: #2d90af;
+height: 30px;
+width: 100vw;
+bottom: -30px;
+}
+.send{
+	background-color: #efbd4a;
+	height: 58px;
+	width: 250px;
+	bottom:0;
+	position: absolute;
+	border-radius:0 100% 0 0;
+
+}
+.tree{
+	height: 500px;
+	width: 500px;
+	position: absolute;
+	border: 5px solid transparent;
+	border-right: 50px solid #b8561f;
+	bottom:-80px;
+	border-radius: 50%;
+	transform: rotate(50deg);
+	left:-360px;
+	z-index: -1;
+}
+.tree>div:nth-child(1){
+	height: 120px;
+	width: 150px;
+	position: absolute;
+	right:75px;
+	border-radius: 50%;
+	border-top: 40px solid #736d31;
+	transform: rotate(-60deg);
+
+}
+.tree>div:nth-child(2){
+	height: 100px;
+	width: 130px;
+	position: absolute;
+	right:10px;
+	top:-100px;
+	border-top: 40px solid #736d31;
+	transform: rotate(-65deg);
+	border-radius: 50%;
+	
+}
+.tree>div:nth-child(3){
+    height: 100px;
+	width: 120px;
+	position: absolute;
+	right:50px;
+	top:-100px;
+	border-top: 40px solid #736d31;
+	transform: rotate(-65deg);
+	border-radius: 50%;
+}
+.tree>div:nth-child(4){
+	background-color: #736d31;
+	height: 60px;
+	width: 120px;
+	position: absolute;
+	right: 20px;
+	top:-30px;
+	border-radius: 120px 120px 0 0;
+	transform: rotate(20deg);
+
+}
+.tree>div:nth-child(5){
+	background-color: #736d31;
+	height: 45px;
+	width: 90px;
+	position: absolute;
+	right: 70px;
+	top:40px;
+	transform: rotate(-120deg);
+	border-radius: 120px 120px 0 0;
+}
+.sun{
+	background-color: orange;
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	position: absolute;
+	margin: auto;
+	left:0;
+	right:0;
+	top:320px;
+	z-index: -2;
+	animation: sunset 10s linear forwards;
+
+}
